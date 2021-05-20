@@ -1,0 +1,30 @@
+name: DominosCore
+version: ${project.version}
+main: dominos.core.dominoscore.DominosCore
+api-version: 1.16
+authors: [ Little_ ]
+commands:
+  tntfill:
+    description: Fills local dispenser arrays
+    usage: </command>
+  fire:
+    description: Fires last button
+    usage: </command>
+  magicsand:
+    description: Gives a MagicSand generator
+    usage: </command>
+  ms:
+    description: Gives a MagicSand generator
+    usage: </command>
+  tf:
+    description: Fires last button
+    usage: </command>
+  discord:
+    description: Discord invite
+    usage: </command>
+  ce:
+    description: Clears Entities
+    usage: </command>
+  features:
+    description: Gives you a list of features
+    usage: </command>
