@@ -10,3 +10,8 @@
 > - TnTfill
 > - TNT Auto aligns to middle of block
 > - /CE - Clear nearby Sand/TN
+
+**Test server IP**
+- **IP** FactionsNetwork.com
+- **Backup IP** 142.44.255.130:25590
+- **Discord** https://discord.gg/TcR6YVzWHF
