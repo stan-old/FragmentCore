@@ -9,7 +9,7 @@
 > - Bonemeal stack remover
 > - TnTfill
 > - TNT Auto aligns to middle of block
-> - /CE - Clear nearby Sand/TN
+> - /CE - Clear nearby Sand/TnT
 
 **Test server IP**
 - **IP** FactionsNetwork.com
