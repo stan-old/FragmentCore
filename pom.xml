@@ -9,7 +9,7 @@
     <version>1.16.5</version>
     <packaging>jar</packaging>
 
-    <name>DominosCore</name>
+    <name>FragmentCore</name>
 
     <properties>
         <java.version>1.8</java.version>
