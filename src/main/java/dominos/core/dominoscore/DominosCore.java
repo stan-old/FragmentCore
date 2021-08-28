@@ -2,7 +2,7 @@ package dominos.core.dominoscore;
 
 import dominos.core.dominoscore.commands.Discord;
 import dominos.core.dominoscore.commands.Features;
-import dominos.core.dominoscore.events.ClearStack;
+import dominos.core.dominoscore.features.ClearStack;
 import dominos.core.dominoscore.events.JoinEvent;
 import dominos.core.dominoscore.features.*;
 import dominos.core.dominoscore.patches.EastWest;
@@ -30,11 +30,13 @@ public final class DominosCore extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new NetheriteBreaker(), this);
         getServer().getPluginManager().registerEvents(new DispenserBreak(), this);
         getServer().getPluginManager().registerEvents(new ProtectionBlock(), this);
-        getServer().getPluginManager().registerEvents(new MovementFix(), this);
-        getServer().getPluginManager().registerEvents(new EastWest(), this);
+        //getServer().getPluginManager().registerEvents(new MovementFix(), this);
+        //getServer().getPluginManager().registerEvents(new EastWest(), this);
         getServer().getPluginManager().registerEvents(new MagicSand(this), this);
+        getServer().getPluginManager().registerEvents(new MagicConc(this), this);
+        getServer().getPluginManager().registerEvents(new Stackers(this), this);
         getServer().getPluginManager().registerEvents(new ClearStack(), this);
-//        getServer().getPluginManager().registerEvents(new Fire(), this);
+        //getServer().getPluginManager().registerEvents(new Fire(), this);
 
 
         PluginManager pm = Bukkit.getPluginManager();
@@ -45,6 +47,10 @@ public final class DominosCore extends JavaPlugin {
         getCommand("ce").setExecutor(new ClearEntities(this));
         getCommand("features").setExecutor(new Features(this));
         getCommand("magicsand").setExecutor(new MagicSand(this));
+        getCommand("magicconc").setExecutor(new MagicConc(this));
+        getCommand("getstacker").setExecutor(new Stackers(this));
+        getCommand("mc").setExecutor(new MagicConc(this));
+        getCommand("gs").setExecutor(new Stackers(this));
         getCommand("ms").setExecutor(new MagicSand(this));
 
     }

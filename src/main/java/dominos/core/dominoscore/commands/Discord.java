@@ -19,7 +19,7 @@ public class Discord implements CommandExecutor, Listener {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         Player player = (Player) sender;
 
-        player.sendMessage(ChatColor.translateAlternateColorCodes('&',"&a[+] https://discord.gg/TcR6YVzWHF"));
+        player.sendMessage(ChatColor.translateAlternateColorCodes('&',"&a[+] https://discord.gg/GWUAW6tTjP"));
 
         return true;
     }

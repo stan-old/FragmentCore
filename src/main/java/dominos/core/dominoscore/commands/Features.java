@@ -21,10 +21,8 @@ public class Features implements CommandExecutor, Listener {
 
         player.sendMessage(ChatColor.translateAlternateColorCodes('&',"&a[+] /Tntfill - Fills Dispensers"));
         player.sendMessage(ChatColor.translateAlternateColorCodes('&',"&a[+] /ce - Clears Nearby Sand & TNT"));
-        player.sendMessage(ChatColor.translateAlternateColorCodes('&',"&a[+] /P H - Go To Your Plot Home"));
-        player.sendMessage(ChatColor.translateAlternateColorCodes('&',"&a[+] /Discord - Discord Link"));
-        player.sendMessage(ChatColor.translateAlternateColorCodes('&',"&a[+] /Fire - Unavailable"));
-        player.sendMessage(ChatColor.translateAlternateColorCodes('&',"&a[+] /MagicSand - Unavailable"));
+        player.sendMessage(ChatColor.translateAlternateColorCodes('&',"&a[+] /MagicSand - Get MagicSand Block"));
+        player.sendMessage(ChatColor.translateAlternateColorCodes('&',"&a[+] /MagicConc - Get MagicConcrete Block"));
 
         return true;
     }

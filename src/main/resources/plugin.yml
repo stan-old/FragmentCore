@@ -7,8 +7,8 @@ commands:
   tntfill:
     description: Fills local dispenser arrays
     usage: </command>
-  fire:
-    description: Fires last button
+  tf:
+    description: Fills local dispenser arrays
     usage: </command>
   magicsand:
     description: Gives a MagicSand generator
@@ -16,8 +16,17 @@ commands:
   ms:
     description: Gives a MagicSand generator
     usage: </command>
-  tf:
-    description: Fires last button
+  magicconc:
+    description: Gives a MagicConcrete generator
+    usage: </command>
+  mc:
+    description: Gives a MagicConcrete generator
+    usage: </command>
+  getstacker:
+    description: Gives a Stacker
+    usage: </command>
+  gs:
+    description: Gives a Stacker
     usage: </command>
   discord:
     description: Discord invite
