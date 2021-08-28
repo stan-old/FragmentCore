@@ -16,5 +16,7 @@ Forked from https://github.com/aJoshu/DominosCore-1.16
 > - Netherrite Breaker
 > - /Features & /Discord (Can be configured in src)
 
+(MovementFix and Primer Momentum Patch are still in the source but have been disabled)
+
 **Join the Discord for more info**
 https://discord.gg/GWUAW6tTjP
