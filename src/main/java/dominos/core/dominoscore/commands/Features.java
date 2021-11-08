@@ -23,6 +23,7 @@ public class Features implements CommandExecutor, Listener {
         player.sendMessage(ChatColor.translateAlternateColorCodes('&',"&a[+] /ce - Clears Nearby Sand & TNT"));
         player.sendMessage(ChatColor.translateAlternateColorCodes('&',"&a[+] /MagicSand - Get MagicSand Block"));
         player.sendMessage(ChatColor.translateAlternateColorCodes('&',"&a[+] /MagicConc - Get MagicConcrete Block"));
+        player.sendMessage(ChatColor.translateAlternateColorCodes('&',"&a[+] and many more... (check github/discord)"));
 
         return true;
     }

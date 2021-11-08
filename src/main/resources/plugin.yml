@@ -2,7 +2,7 @@ name: DominosCore
 version: ${project.version}
 main: dominos.core.dominoscore.DominosCore
 api-version: 1.16
-authors: [ Little_ ]
+authors: [ Little_, jesus_is_hot, bantuerfei]
 commands:
   tntfill:
     description: Fills local dispenser arrays
@@ -37,3 +37,12 @@ commands:
   features:
     description: Gives you a list of features
     usage: </command>
+  fire:
+    description: Presses the last pressed button
+    usage: /fire
+  ct:
+    description: removes all block/sand/tnt trackers
+    usage: /ct
+  et:
+    description: controls explosion markers
+    usage: /et <toggle|clear>

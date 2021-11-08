@@ -17,7 +17,8 @@ import org.bukkit.plugin.java.JavaPlugin;
 public final class DominosCore extends JavaPlugin {
 
     private static DominosCore instance;
-
+    private Fire fire;
+    private Tracker tracker;
     public static DominosCore getInstance() {
         return instance;
     }
@@ -25,6 +26,9 @@ public final class DominosCore extends JavaPlugin {
     @Override
     public void onEnable() {
         instance = this;
+
+        fire = new Fire(this);
+        tracker = new Tracker(this);
 
         getServer().getPluginManager().registerEvents(new JoinEvent(), this);
         getServer().getPluginManager().registerEvents(new NetheriteBreaker(), this);
@@ -36,7 +40,9 @@ public final class DominosCore extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new MagicConc(this), this);
         getServer().getPluginManager().registerEvents(new Stackers(this), this);
         getServer().getPluginManager().registerEvents(new ClearStack(), this);
-        //getServer().getPluginManager().registerEvents(new Fire(), this);
+        getServer().getPluginManager().registerEvents(fire, this);
+        getServer().getPluginManager().registerEvents(new TickCounter(this), this);
+        getServer().getPluginManager().registerEvents(tracker, this);
 
 
         PluginManager pm = Bukkit.getPluginManager();
@@ -52,7 +58,9 @@ public final class DominosCore extends JavaPlugin {
         getCommand("mc").setExecutor(new MagicConc(this));
         getCommand("gs").setExecutor(new Stackers(this));
         getCommand("ms").setExecutor(new MagicSand(this));
-
+        getCommand("fire").setExecutor(fire);
+        getCommand("et").setExecutor(tracker);
+        getCommand("ct").setExecutor(tracker);
     }
 
     @Override
