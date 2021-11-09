@@ -15,6 +15,9 @@ Forked from https://github.com/aJoshu/DominosCore-1.16
 > - Dispenser Break (No drops)
 > - Netherrite Breaker
 > - /Features & /Discord (Can be configured in src)
+> - /fire
+> - Tick Counter (Blaze Rod)
+> - Entity Tracker (Iron Sword /et /ct)
 
 (MovementFix and Primer Momentum Patch are still in the source but have been disabled)
 
