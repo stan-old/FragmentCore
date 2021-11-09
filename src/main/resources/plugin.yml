@@ -43,6 +43,6 @@ commands:
   ct:
     description: removes all block/sand/tnt trackers
     usage: /ct
-  et:
-    description: controls explosion markers
-    usage: /et <toggle|clear>
+  #et:
+  #  description: controls explosion markers
+  #  usage: /et <toggle|clear>

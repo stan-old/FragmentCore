@@ -59,7 +59,7 @@ public final class DominosCore extends JavaPlugin {
         getCommand("gs").setExecutor(new Stackers(this));
         getCommand("ms").setExecutor(new MagicSand(this));
         getCommand("fire").setExecutor(fire);
-        getCommand("et").setExecutor(tracker);
+        //getCommand("et").setExecutor(tracker);
         getCommand("ct").setExecutor(tracker);
     }
 
