@@ -90,7 +90,7 @@ public class Tracker implements Listener, CommandExecutor {
                             toRemoveTNT.add(tnt);
                         } else {
                             Location loc = tnt.getLocation();
-                            p.sendMessage(String.format("§7[§3i§7] §fTNT: Ticks: §b%s §7[§f%.3f, %.3f, %.3f§7]", tnt.getTicksLived(), loc.getX(), loc.getY(), loc.getZ()));
+                            p.sendMessage(String.format("§7[§3i§7] §fTNT: Ticks: §b%s §7[§f%.5f, %.5f, %.5f§7]", tnt.getTicksLived(), loc.getX(), loc.getY(), loc.getZ()));
                         }
                     }
                     for (FallingBlock falling : t.trackedFalling) {
@@ -98,18 +98,18 @@ public class Tracker implements Listener, CommandExecutor {
                             toRemoveFalling.add(falling);
                         } else {
                             Location loc = falling.getLocation();
-                            p.sendMessage(String.format("§7[§3i§7] §fFB: Ticks: §b%s §7[§f%.3f, %.3f, %.3f§7]", falling.getTicksLived(), loc.getX(), loc.getY(), loc.getZ()));
+                            p.sendMessage(String.format("§7[§3i§7] §fFB: Ticks: §b%s §7[§f%.5f, %.5f, %.5f§7]", falling.getTicksLived(), loc.getX(), loc.getY(), loc.getZ()));
                         }
                     }
                     for (FallingBlock falling : toRemoveFalling) {
                         Location loc = falling.getLocation();
                         t.trackedFalling.remove(falling);
-                        p.sendMessage(String.format("§7[§3i§7] §fDead FB: Ticks: §b%s §7[§f%.3f, %.3f, %.3f§7]", falling.getTicksLived(), loc.getX(), loc.getY(), loc.getZ()));
+                        p.sendMessage(String.format("§7[§3i§7] §fDead FB: Ticks: §b%s §7[§f%.5f, %.5f, %.5f§7]", falling.getTicksLived(), loc.getX(), loc.getY(), loc.getZ()));
                     }
                     for (TNTPrimed tnt : toRemoveTNT) {
                         Location loc = tnt.getLocation();
                         t.trackedTNT.remove(tnt);
-                        p.sendMessage(String.format("§7[§3i§7] §fDead TNT: Ticks: §b%s §7[§f%.3f, %.3f, %.3f§7]", tnt.getTicksLived(), loc.getX(), loc.getY(), loc.getZ()));
+                        p.sendMessage(String.format("§7[§3i§7] §fDead TNT: Ticks: §b%s §7[§f%.5f, %.5f, %.5f§7]", tnt.getTicksLived(), loc.getX(), loc.getY(), loc.getZ()));
                     }
                 }
             }
@@ -224,7 +224,7 @@ public class Tracker implements Listener, CommandExecutor {
             Player p = plugin.getServer().getPlayer(entry.getKey());
             trackerInstance t = entry.getValue();
             if (t.trackedTNT.contains(e)) {
-                p.sendMessage(String.format("§7[§4!§7] §fTNT: §4EXPLODE §7[§f%.3f, %.3f, %.3f§7]", loc.getX(), loc.getY(), loc.getZ()));
+                p.sendMessage(String.format("§7[§4!§7] §fTNT: §4EXPLODE §7[§f%.5f, %.5f, %.5f§7]", loc.getX(), loc.getY(), loc.getZ()));
                 t.trackedTNT.remove(e);
             }
         }
