@@ -1,10 +1,10 @@
 package dominos.core.dominoscore.features.customentities;
 
-import net.minecraft.server.v1_16_R3.EntityArmorStand;
+import net.minecraft.world.entity.decoration.EntityArmorStand;
 import org.bukkit.Location;
 import org.bukkit.Material;
-import org.bukkit.craftbukkit.v1_16_R3.CraftWorld;
-import org.bukkit.craftbukkit.v1_16_R3.entity.CraftArmorStand;
+import org.bukkit.craftbukkit.v1_17_R1.CraftWorld;
+import org.bukkit.craftbukkit.v1_17_R1.entity.CraftArmorStand;
 import org.bukkit.inventory.ItemStack;
 
 //thanks to bantuerfei for making this
